@@ -3198,7 +3198,7 @@ class getTableNames_result(object):
         if ftype == TType.LIST:
           self.success = []
           (_etype19, _size16) = iprot.readListBegin()
-          for _i20 in xrange(_size16):
+          for _i20 in range(_size16):
             _elem21 = iprot.readString();
             self.success.append(_elem21)
           iprot.readListEnd()
@@ -7551,5 +7551,3 @@ class scannerClose_result(object):
 
   def __ne__(self, other):
     return not (self == other)
-
-
